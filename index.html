@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Homenagem para Minha Esposa</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 2px 2px #d45d79;
+    }
+
+    .text-block {
+      margin: 30px auto;
+      font-size: 1.5em;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 0 10px #d45d79;
+    }
+
+    .emoji {
+      font-size: 2em;
+      margin: 10px;
+    }
+
+    .heart {
+      font-size: 2em;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #d45d79;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background-color: #bf4b68;
+    }
+
+    .image {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1.2em;
+    }
+
+    #segunda-parte {
+      display: none;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      margin-top: 80px;
+    }
+
+    #segunda-parte.mostrar {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Primeira Parte -->
+  <h1>💍 Minha Esposa, Eu Te Amo Eternamente 💖</h1>
+
+  <div class="emoji">❤️💍👰🤵💑💒🌹</div>
+
+  <div class="text-block">
+    <p>
+      Minha mulher, eu te amo eternamente.<br>
+      Minha esposa, você é tudo o que eu tenho e dependo de você pra viver.<br>
+      Minha amada, você é a mãe dos meus filhos, amor e o meu alicerce.<br>
+      Jajá vamos estar com nossos filhos e nossa casa, conquistando tudo juntos.<br>
+      Minha esposa, ensinando nossos filhos o que é certo.<br>
+      Amor, sendo inspiração pra eles.<br>
+      Vamos conquistar tudo, minha esposa.<br>
+      Eu te amo eternamente, minha mulher, mãe dos meus filhos.
+    </p>
+  </div>
+
+  <div class="emoji">💖💘💗💓💞💝</div>
+
+  <button class="btn" onclick="mostrarSegundaParte()">Clique aqui minha esposa 💌</button>
+
+  <div class="heart">💖💖💖</div>
+
+  <!-- Segunda Parte (oculta inicialmente) -->
+  <div id="segunda-parte">
+    <h1>💖 eu te amo minha esposa 💖</h1>
+
+    <div class="emoji">💏👨‍👩‍👧‍👦💘</div>
+
+    <!-- Imagem -->
+    <img class="Imagem" src="https://postimg.cc/2qDHjLsY" alt="Imagem do Amor">
+
+    <div class="text-block">
+      <p>
+        Meu amor, cada dia ao seu lado é um presente que deus me deu.<br>
+        Você é minha inspiração minha esposa, minha força e minha alma.<br>
+        Logo teremos nosso lar, nossos filhos correndo pela casa, e nosso amor guiando tudo isso.<br>
+        Eu te amo eternamente minha mulher mãe dos meus filhos minha amada, além do tempo. Eu te amo eternamente, minha mulher minha esposa meu alicerce meu presente de deus.<br>
+      </p>
+    </div>
+
+    <div class="emoji">💖💗💓💞</div>
+  </div>
+
+  <footer>
+    Feito com muito amor pelo seu esposo. 💕
+  </footer>
+
+  <script>
+    function mostrarSegundaParte() {
+      const parte = document.getElementById('segunda-parte');
+      parte.classList.add('mostrar');
+      parte.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
